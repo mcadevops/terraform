@@ -11,7 +11,7 @@ variable "AWS_SECRET_KEY" {}
 provider "aws" {
 access_key = var.AWS_ACCESS_KEY
 secret_key = var.AWS_SECRET_KEY
-region = "ap-south-1"
+region = "us-east-1"
 }
 
 resource "aws_instance" "myec2" {
