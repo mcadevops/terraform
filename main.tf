@@ -14,7 +14,7 @@ secret_key = var.AWS_SECRET_KEY
 region = "us-east-1"
 }
 
-resource "aws_instance" "myec2" {
+resource "aws_instance" "yourec2" {
   ami           = "ami-03a6eaae9938c858c"
   instance_type = "t2.micro"
   vpc_security_group_ids=[aws_security_group.web-sg.id]
